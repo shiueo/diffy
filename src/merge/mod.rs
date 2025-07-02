@@ -538,6 +538,7 @@ fn cleanup_conflicts<'ancestor, 'ours, 'theirs, T: ?Sized + SliceLike + PartialE
     }
 }
 
+#[warn(clippy::too_many_arguments)]
 fn output_result<'a, T: ?Sized>(
     ancestor: &[&'a str],
     ours: &[&'a str],
@@ -606,7 +607,7 @@ fn add_conflict_marker(
     }
     output.push('\n');
 }
-
+#[warn(clippy::too_many_arguments)]
 fn output_result_bytes<'a, T: ?Sized>(
     ancestor: &[&'a [u8]],
     ours: &[&'a [u8]],
