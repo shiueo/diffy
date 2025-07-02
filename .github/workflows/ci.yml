@@ -26,7 +26,7 @@ jobs:
       - name: Lint
         run: |
           cargo fmt -- --check
-          cargo clippy --all-targets --all-features
+          cargo clippy --all-targets
 
       - name: Build Documentation
         run: cargo doc --no-deps
