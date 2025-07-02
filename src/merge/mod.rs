@@ -575,7 +575,7 @@ fn output_result<'a, T: ?Sized>(
             MergeRange::Both(range, _) => {
                 output.extend(ours[range.range()].iter().copied());
             }
-        }
+        } 
     }
 
     if conflicts != 0 {
