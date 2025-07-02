@@ -169,7 +169,12 @@ impl MergeOptions {
     }
 
     /// Set all conflict marker labels at once
-    pub fn set_conflict_labels<S1, S2, S3>(&mut self, ours: S1, theirs: S2, original: S3) -> &mut Self
+    pub fn set_conflict_labels<S1, S2, S3>(
+        &mut self,
+        ours: S1,
+        theirs: S2,
+        original: S3,
+    ) -> &mut Self
     where
         S1: Into<String>,
         S2: Into<String>,
